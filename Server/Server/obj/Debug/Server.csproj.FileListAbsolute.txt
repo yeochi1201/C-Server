@@ -1,0 +1,11 @@
+D:\Workspace\C#\Server\Server\bin\Debug\Server.exe.config
+D:\Workspace\C#\Server\Server\bin\Debug\Server.exe
+D:\Workspace\C#\Server\Server\bin\Debug\Server.pdb
+D:\Workspace\C#\Server\Server\bin\Debug\ServerCore.dll
+D:\Workspace\C#\Server\Server\bin\Debug\ServerCore.pdb
+D:\Workspace\C#\Server\Server\bin\Debug\ServerCore.dll.config
+D:\Workspace\C#\Server\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+D:\Workspace\C#\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+D:\Workspace\C#\Server\Server\obj\Debug\Server.csproj.CopyComplete
+D:\Workspace\C#\Server\Server\obj\Debug\Server.exe
+D:\Workspace\C#\Server\Server\obj\Debug\Server.pdb
