@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "TCJ54/AV1hbCCLLiohQ7ojY8BP+nH1yuMr1Q7w/ANp8od7D61pSmviPGJZDwKjN9iDqO6bNB/5/ExIGnO2yezQ==",
+  "success": true,
+  "projectFilePath": "D:\\Workspace\\C#\\C#Server\\DummyClient\\DummyClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\park5\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512"
+  ],
+  "logs": []
+}
