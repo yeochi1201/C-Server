@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "Packet/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "ServerCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Packet.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Packet.dll": {}
+        }
+      },
       "ServerCore/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -15,6 +28,11 @@
     }
   },
   "libraries": {
+    "Packet/1.0.0": {
+      "type": "project",
+      "path": "../Packet/Packet.csproj",
+      "msbuildProject": "../Packet/Packet.csproj"
+    },
     "ServerCore/1.0.0": {
       "type": "project",
       "path": "../ServerCore/ServerCore.csproj",
@@ -23,6 +41,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Packet >= 1.0.0",
       "ServerCore >= 1.0.0"
     ]
   },
@@ -32,11 +51,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Workspace\\C#\\C#Server\\Server\\Server.csproj",
+      "projectUniqueName": "D:\\GitHub\\C-Server\\C#Server\\Server\\Server.csproj",
       "projectName": "Server",
-      "projectPath": "D:\\Workspace\\C#\\C#Server\\Server\\Server.csproj",
+      "projectPath": "D:\\GitHub\\C-Server\\C#Server\\Server\\Server.csproj",
       "packagesPath": "C:\\Users\\park5\\.nuget\\packages\\",
-      "outputPath": "D:\\Workspace\\C#\\C#Server\\Server\\obj\\",
+      "outputPath": "D:\\GitHub\\C-Server\\C#Server\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\park5\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +72,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Workspace\\C#\\C#Server\\ServerCore\\ServerCore.csproj": {
-              "projectPath": "D:\\Workspace\\C#\\C#Server\\ServerCore\\ServerCore.csproj"
+            "D:\\GitHub\\C-Server\\C#Server\\Packet\\Packet.csproj": {
+              "projectPath": "D:\\GitHub\\C-Server\\C#Server\\Packet\\Packet.csproj"
+            },
+            "D:\\GitHub\\C-Server\\C#Server\\ServerCore\\ServerCore.csproj": {
+              "projectPath": "D:\\GitHub\\C-Server\\C#Server\\ServerCore\\ServerCore.csproj"
             }
           }
         }

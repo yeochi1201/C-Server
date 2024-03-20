@@ -9,3 +9,15 @@ D:\Workspace\C#\C#Server\ServerCore\obj\Debug\net8.0\ServerCore.dll
 D:\Workspace\C#\C#Server\ServerCore\obj\Debug\net8.0\refint\ServerCore.dll
 D:\Workspace\C#\C#Server\ServerCore\obj\Debug\net8.0\ServerCore.pdb
 D:\Workspace\C#\C#Server\ServerCore\obj\Debug\net8.0\ref\ServerCore.dll
+D:\GitHub\C-Server\C#Server\ServerCore\bin\Debug\net8.0\ServerCore.deps.json
+D:\GitHub\C-Server\C#Server\ServerCore\bin\Debug\net8.0\ServerCore.dll
+D:\GitHub\C-Server\C#Server\ServerCore\bin\Debug\net8.0\ServerCore.pdb
+D:\GitHub\C-Server\C#Server\ServerCore\obj\Debug\net8.0\ServerCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\C-Server\C#Server\ServerCore\obj\Debug\net8.0\ServerCore.AssemblyInfoInputs.cache
+D:\GitHub\C-Server\C#Server\ServerCore\obj\Debug\net8.0\ServerCore.AssemblyInfo.cs
+D:\GitHub\C-Server\C#Server\ServerCore\obj\Debug\net8.0\ServerCore.csproj.CoreCompileInputs.cache
+D:\GitHub\C-Server\C#Server\ServerCore\obj\Debug\net8.0\ServerCore.sourcelink.json
+D:\GitHub\C-Server\C#Server\ServerCore\obj\Debug\net8.0\ServerCore.dll
+D:\GitHub\C-Server\C#Server\ServerCore\obj\Debug\net8.0\refint\ServerCore.dll
+D:\GitHub\C-Server\C#Server\ServerCore\obj\Debug\net8.0\ServerCore.pdb
+D:\GitHub\C-Server\C#Server\ServerCore\obj\Debug\net8.0\ref\ServerCore.dll

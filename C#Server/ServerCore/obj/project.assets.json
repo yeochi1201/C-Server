@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Workspace\\C#\\C#Server\\ServerCore\\ServerCore.csproj",
+      "projectUniqueName": "D:\\GitHub\\C-Server\\C#Server\\ServerCore\\ServerCore.csproj",
       "projectName": "ServerCore",
-      "projectPath": "D:\\Workspace\\C#\\C#Server\\ServerCore\\ServerCore.csproj",
+      "projectPath": "D:\\GitHub\\C-Server\\C#Server\\ServerCore\\ServerCore.csproj",
       "packagesPath": "C:\\Users\\park5\\.nuget\\packages\\",
-      "outputPath": "D:\\Workspace\\C#\\C#Server\\ServerCore\\obj\\",
+      "outputPath": "D:\\GitHub\\C-Server\\C#Server\\ServerCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\park5\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,0 +1,16 @@
+D:\GitHub\C-Server\C#Server\Packet\bin\Debug\net8.0\Packet.deps.json
+D:\GitHub\C-Server\C#Server\Packet\bin\Debug\net8.0\Packet.dll
+D:\GitHub\C-Server\C#Server\Packet\bin\Debug\net8.0\Packet.pdb
+D:\GitHub\C-Server\C#Server\Packet\bin\Debug\net8.0\ServerCore.dll
+D:\GitHub\C-Server\C#Server\Packet\bin\Debug\net8.0\ServerCore.pdb
+D:\GitHub\C-Server\C#Server\Packet\obj\Debug\net8.0\Packet.csproj.AssemblyReference.cache
+D:\GitHub\C-Server\C#Server\Packet\obj\Debug\net8.0\Packet.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\C-Server\C#Server\Packet\obj\Debug\net8.0\Packet.AssemblyInfoInputs.cache
+D:\GitHub\C-Server\C#Server\Packet\obj\Debug\net8.0\Packet.AssemblyInfo.cs
+D:\GitHub\C-Server\C#Server\Packet\obj\Debug\net8.0\Packet.csproj.CoreCompileInputs.cache
+D:\GitHub\C-Server\C#Server\Packet\obj\Debug\net8.0\Packet.sourcelink.json
+D:\GitHub\C-Server\C#Server\Packet\obj\Debug\net8.0\Packet.csproj.Up2Date
+D:\GitHub\C-Server\C#Server\Packet\obj\Debug\net8.0\Packet.dll
+D:\GitHub\C-Server\C#Server\Packet\obj\Debug\net8.0\refint\Packet.dll
+D:\GitHub\C-Server\C#Server\Packet\obj\Debug\net8.0\Packet.pdb
+D:\GitHub\C-Server\C#Server\Packet\obj\Debug\net8.0\ref\Packet.dll

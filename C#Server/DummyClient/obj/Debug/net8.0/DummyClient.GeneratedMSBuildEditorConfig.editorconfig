@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DummyClient
-build_property.ProjectDir = D:\Workspace\C#\C#Server\DummyClient\
+build_property.ProjectDir = D:\GitHub\C-Server\C#Server\DummyClient\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
