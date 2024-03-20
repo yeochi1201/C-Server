@@ -11,11 +11,11 @@ namespace DummyClient
         public override void OnConnected(EndPoint endPoint)
         {
             Console.WriteLine($"On Connected : {endPoint}");
-            PlayerInfoReq packet = new PlayerInfoReq() { playerId = 1001, name="ABCD"};
-            packet.skills.Add(new PlayerInfoReq.SkillInfo() { skillId = 101, level = 1, duration = 3.0f });
-            packet.skills.Add(new PlayerInfoReq.SkillInfo() { skillId = 102, level = 2, duration = 4.0f });
-            packet.skills.Add(new PlayerInfoReq.SkillInfo() { skillId = 103, level = 3, duration = 5.0f });
-            packet.skills.Add(new PlayerInfoReq.SkillInfo() { skillId = 104, level = 4, duration = 6.0f });
+            PlayerInfoReq packet = new PlayerInfoReq() { playerId = 1001, playerName="ABCD"};
+            packet.skills.Add(new PlayerInfoReq.Skill() { skillId = 101, level = 1, duration = 3.0f });
+            packet.skills.Add(new PlayerInfoReq.Skill() { skillId = 102, level = 2, duration = 4.0f });
+            packet.skills.Add(new PlayerInfoReq.Skill() { skillId = 103, level = 3, duration = 5.0f });
+            packet.skills.Add(new PlayerInfoReq.Skill() { skillId = 104, level = 4, duration = 6.0f });
             
             ArraySegment<byte> s = packet.Write();
             if (s != null)

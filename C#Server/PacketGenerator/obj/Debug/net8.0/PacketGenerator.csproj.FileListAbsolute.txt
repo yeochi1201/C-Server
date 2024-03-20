@@ -1,0 +1,15 @@
+D:\GitHub\C-Server\C#Server\PacketGenerator\bin\Debug\net8.0\PacketGenerator.exe
+D:\GitHub\C-Server\C#Server\PacketGenerator\bin\Debug\net8.0\PacketGenerator.deps.json
+D:\GitHub\C-Server\C#Server\PacketGenerator\bin\Debug\net8.0\PacketGenerator.runtimeconfig.json
+D:\GitHub\C-Server\C#Server\PacketGenerator\bin\Debug\net8.0\PacketGenerator.dll
+D:\GitHub\C-Server\C#Server\PacketGenerator\bin\Debug\net8.0\PacketGenerator.pdb
+D:\GitHub\C-Server\C#Server\PacketGenerator\obj\Debug\net8.0\PacketGenerator.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\C-Server\C#Server\PacketGenerator\obj\Debug\net8.0\PacketGenerator.AssemblyInfoInputs.cache
+D:\GitHub\C-Server\C#Server\PacketGenerator\obj\Debug\net8.0\PacketGenerator.AssemblyInfo.cs
+D:\GitHub\C-Server\C#Server\PacketGenerator\obj\Debug\net8.0\PacketGenerator.csproj.CoreCompileInputs.cache
+D:\GitHub\C-Server\C#Server\PacketGenerator\obj\Debug\net8.0\PacketGenerator.sourcelink.json
+D:\GitHub\C-Server\C#Server\PacketGenerator\obj\Debug\net8.0\PacketGenerator.dll
+D:\GitHub\C-Server\C#Server\PacketGenerator\obj\Debug\net8.0\refint\PacketGenerator.dll
+D:\GitHub\C-Server\C#Server\PacketGenerator\obj\Debug\net8.0\PacketGenerator.pdb
+D:\GitHub\C-Server\C#Server\PacketGenerator\obj\Debug\net8.0\PacketGenerator.genruntimeconfig.cache
+D:\GitHub\C-Server\C#Server\PacketGenerator\obj\Debug\net8.0\ref\PacketGenerator.dll
