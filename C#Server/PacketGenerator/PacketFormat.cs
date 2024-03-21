@@ -4,10 +4,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace PacketGenerator
 {
+    //{0} : packet id
+    //{1} : packet
     public class PacketFormat
     {
+        public static string fileFormat =
+@"
+using ServerCore;
+using System;
+using System.Net;
+using System.Text;
+
+public enum PacketID
+{{
+    {0}
+}}
+
+{1}
+";
+
+        //{0} : packet name
+        //{1} : packet num
+        public static string packetEnumFormat =
+@"
+    {0} = {1},
+";
+
         //{0} : packet name
         //{1} : member attributes
         //{2} : member attribute read
@@ -96,6 +121,13 @@ public List<{0}> {1}s = new List<{0}>();
 this.{1} = BitConverter.{2}(span.Slice(count, span.Length - count));
 count += sizeof({0});";
 
+        //{0} member type
+        //{1} member name
+        public static string readByteFormat =
+@"
+this.{1} = {0}segment.Array[segment.Offset + count]
+count += sizeof({0})
+";
         //{0} member name
         public static string readStringFormat =
 @"
@@ -124,6 +156,14 @@ for (int i = 0; i < {1}Len; i++)
 @"
 success &= BitConverter.TryWriteBytes(span.Slice(count, span.Length - count), this.{1});
 count += sizeof({0});
+";
+
+        //{0} member type
+        //{1} member name
+        public static string writeByteFormat =
+@"
+{0}segment.Array[segment.Offset + count] = this.{1}
+count += sizeof({0})
 ";
 
         //{0} member name

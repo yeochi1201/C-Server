@@ -1,4 +1,18 @@
 
+using ServerCore;
+using System;
+using System.Net;
+using System.Text;
+
+public enum PacketID
+{
+    
+    PlayerInfoReq = 1,
+
+	
+}
+
+
 public class PlayerInfoReq
 {
     public long playerId;
@@ -117,3 +131,4 @@ public class PlayerInfoReq
         return SendBufferHelper.Close(count);
     }
 }
+

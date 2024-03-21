@@ -3,36 +3,28 @@
   "WorkspaceRootPath": "D:\\GitHub\\C-Server\\C#Server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D42B91BB-EAB3-4515-9978-B7BFB3F15866}|PacketGenerator\\PacketGenerator.csproj|d:\\github\\c-server\\c#server\\packetgenerator\\pdl.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{D42B91BB-EAB3-4515-9978-B7BFB3F15866}|PacketGenerator\\PacketGenerator.csproj|solutionrelative:packetgenerator\\pdl.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CDEA58E-EBC5-484E-8FED-AC12955D74EC}|Packet\\Packet.csproj|d:\\github\\c-server\\c#server\\packet\\playerinforeq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CDEA58E-EBC5-484E-8FED-AC12955D74EC}|Packet\\Packet.csproj|solutionrelative:packet\\playerinforeq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D42B91BB-EAB3-4515-9978-B7BFB3F15866}|PacketGenerator\\PacketGenerator.csproj|d:\\github\\c-server\\c#server\\packetgenerator\\packetformat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D42B91BB-EAB3-4515-9978-B7BFB3F15866}|PacketGenerator\\PacketGenerator.csproj|solutionrelative:packetgenerator\\packetformat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D42B91BB-EAB3-4515-9978-B7BFB3F15866}|PacketGenerator\\PacketGenerator.csproj|d:\\github\\c-server\\c#server\\packetgenerator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D42B91BB-EAB3-4515-9978-B7BFB3F15866}|PacketGenerator\\PacketGenerator.csproj|solutionrelative:packetgenerator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\C-Server\\C#Server\\Common\\Packet\\genPackets.bat||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Common\\Packet\\genPackets.bat||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D42B91BB-EAB3-4515-9978-B7BFB3F15866}|PacketGenerator\\PacketGenerator.csproj|d:\\github\\c-server\\c#server\\packetgenerator\\pdl.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D42B91BB-EAB3-4515-9978-B7BFB3F15866}|PacketGenerator\\PacketGenerator.csproj|solutionrelative:packetgenerator\\pdl.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A1A36DC9-6328-483C-94FE-524C1A874BF3}|DummyClient\\DummyClient.csproj|d:\\github\\c-server\\c#server\\dummyclient\\serversession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1A36DC9-6328-483C-94FE-524C1A874BF3}|DummyClient\\DummyClient.csproj|solutionrelative:dummyclient\\serversession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CDEA58E-EBC5-484E-8FED-AC12955D74EC}|Packet\\Packet.csproj|d:\\github\\c-server\\c#server\\packet\\packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CDEA58E-EBC5-484E-8FED-AC12955D74EC}|Packet\\Packet.csproj|solutionrelative:packet\\packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8720D6FC-B119-4BDB-9C6B-ED9C38FE9FD1}|Server\\Server.csproj|d:\\github\\c-server\\c#server\\server\\clientsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8720D6FC-B119-4BDB-9C6B-ED9C38FE9FD1}|Server\\Server.csproj|solutionrelative:server\\clientsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\C-Server\\C#Server\\PacketGenerator\\bin\\Debug\\net8.0\\GenPackets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PacketGenerator\\bin\\Debug\\net8.0\\GenPackets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D42B91BB-EAB3-4515-9978-B7BFB3F15866}|PacketGenerator\\PacketGenerator.csproj|d:\\github\\c-server\\c#server\\packetgenerator\\packetformat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D42B91BB-EAB3-4515-9978-B7BFB3F15866}|PacketGenerator\\PacketGenerator.csproj|solutionrelative:packetgenerator\\packetformat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,11 +34,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 214,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "PDL.xml",
               "DocumentMoniker": "D:\\GitHub\\C-Server\\C#Server\\PacketGenerator\\PDL.xml",
               "RelativeDocumentMoniker": "PacketGenerator\\PDL.xml",
@@ -55,18 +47,29 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
               "WhenOpened": "2024-03-20T08:10:47.953Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "genPackets.bat",
+              "DocumentMoniker": "D:\\GitHub\\C-Server\\C#Server\\Common\\Packet\\genPackets.bat",
+              "RelativeDocumentMoniker": "Common\\Packet\\genPackets.bat",
+              "ToolTip": "D:\\GitHub\\C-Server\\C#Server\\Common\\Packet\\genPackets.bat",
+              "RelativeToolTip": "Common\\Packet\\genPackets.bat",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000614|",
+              "WhenOpened": "2024-03-21T06:13:16.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\GitHub\\C-Server\\C#Server\\PacketGenerator\\Program.cs",
               "RelativeDocumentMoniker": "PacketGenerator\\Program.cs",
               "ToolTip": "D:\\GitHub\\C-Server\\C#Server\\PacketGenerator\\Program.cs",
               "RelativeToolTip": "PacketGenerator\\Program.cs",
-              "ViewState": "AQIAAGcAAAAAAAAAAAAAAHgAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-20T08:09:01.376Z",
               "EditorCaption": ""
@@ -75,8 +78,22 @@
         },
         {
           "DockedWidth": 180,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PacketFormat.cs",
+              "DocumentMoniker": "D:\\GitHub\\C-Server\\C#Server\\PacketGenerator\\PacketFormat.cs",
+              "RelativeDocumentMoniker": "PacketGenerator\\PacketFormat.cs",
+              "ToolTip": "D:\\GitHub\\C-Server\\C#Server\\PacketGenerator\\PacketFormat.cs",
+              "RelativeToolTip": "PacketGenerator\\PacketFormat.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T08:30:16.418Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 5,
@@ -87,73 +104,19 @@
               "RelativeToolTip": "Server\\ClientSession.cs",
               "ViewState": "AQIAACMAAAAAAAAAAAASwD0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T13:37:06.712Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-20T13:37:06.712Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ServerSession.cs",
               "DocumentMoniker": "D:\\GitHub\\C-Server\\C#Server\\DummyClient\\ServerSession.cs",
               "RelativeDocumentMoniker": "DummyClient\\ServerSession.cs",
               "ToolTip": "D:\\GitHub\\C-Server\\C#Server\\DummyClient\\ServerSession.cs",
               "RelativeToolTip": "DummyClient\\ServerSession.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAABRAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T13:36:41.667Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GenPackets.cs",
-              "DocumentMoniker": "D:\\GitHub\\C-Server\\C#Server\\PacketGenerator\\bin\\Debug\\net8.0\\GenPackets.cs",
-              "RelativeDocumentMoniker": "PacketGenerator\\bin\\Debug\\net8.0\\GenPackets.cs",
-              "ToolTip": "D:\\GitHub\\C-Server\\C#Server\\PacketGenerator\\bin\\Debug\\net8.0\\GenPackets.cs",
-              "RelativeToolTip": "PacketGenerator\\bin\\Debug\\net8.0\\GenPackets.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T13:33:59.399Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlayerInfoReq.cs",
-              "DocumentMoniker": "D:\\GitHub\\C-Server\\C#Server\\Packet\\PlayerInfoReq.cs",
-              "RelativeDocumentMoniker": "Packet\\PlayerInfoReq.cs",
-              "ToolTip": "D:\\GitHub\\C-Server\\C#Server\\Packet\\PlayerInfoReq.cs",
-              "RelativeToolTip": "Packet\\PlayerInfoReq.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABsAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T13:05:13.133Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Packet.cs",
-              "DocumentMoniker": "D:\\GitHub\\C-Server\\C#Server\\Packet\\Packet.cs",
-              "RelativeDocumentMoniker": "Packet\\Packet.cs",
-              "ToolTip": "D:\\GitHub\\C-Server\\C#Server\\Packet\\Packet.cs",
-              "RelativeToolTip": "Packet\\Packet.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T12:25:29.635Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PacketFormat.cs",
-              "DocumentMoniker": "D:\\GitHub\\C-Server\\C#Server\\PacketGenerator\\PacketFormat.cs",
-              "RelativeDocumentMoniker": "PacketGenerator\\PacketFormat.cs",
-              "ToolTip": "D:\\GitHub\\C-Server\\C#Server\\PacketGenerator\\PacketFormat.cs",
-              "RelativeToolTip": "PacketGenerator\\PacketFormat.cs",
-              "ViewState": "AQIAAG4AAAAAAAAAAAAAAIcAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T08:30:16.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-20T13:36:41.667Z"
             }
           ]
         }
