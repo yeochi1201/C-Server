@@ -18,19 +18,20 @@ namespace DummyClient
             //client socket create
             Connector connector = new Connector();
             //session create
-            connector.Connect(endPoint, () => { return new ServerSession(); });
+            connector.Connect(endPoint, () => { return SessionManager.Instance.Generate(); }, 10);
 
             while (true)
             {
                 try
                 {
+                    SessionManager.Instance.SendForEach();
                 }
                 catch (Exception e)
                 {
                     Console.WriteLine(e);
                 }
 
-                Thread.Sleep(100);
+                Thread.Sleep(250);
             }
         }
     }

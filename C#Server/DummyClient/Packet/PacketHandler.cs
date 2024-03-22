@@ -1,4 +1,5 @@
-﻿using ServerCore;
+﻿using DummyClient;
+using ServerCore;
 
 
 class PacketHandler
@@ -12,5 +13,13 @@ class PacketHandler
         {
             Console.WriteLine($"Skill : {skill.skillId} {skill.duration} {skill.level}");
         }
+    }
+
+    public static void S_ChatHandler(PacketSession session, IPacket packet)
+    {
+        S_Chat chatPacket = packet as S_Chat;
+        ServerSession serverSession = session as ServerSession;
+
+        Console.WriteLine($"{chatPacket.playerId} : {chatPacket.chat}");
     }
 }

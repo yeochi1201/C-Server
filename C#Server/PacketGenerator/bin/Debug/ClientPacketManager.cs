@@ -27,6 +27,10 @@ _onRecv.Add((ushort)PacketID.PlayerInfoReq, MakePacket<PlayerInfoReq>);
 _handler.Add((ushort)PacketID.PlayerInfoReq, PacketHandler.PlayerInfoReqHandler);
 
 
+_onRecv.Add((ushort)PacketID.S_Chat, MakePacket<S_Chat>);
+_handler.Add((ushort)PacketID.S_Chat, PacketHandler.S_ChatHandler);
+
+
     }
     public void OnRecvPacket(PacketSession session, ArraySegment<byte> buffer)
     {

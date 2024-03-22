@@ -10,6 +10,8 @@ namespace Server
     {
         //server socket create
         static Listener _listner = new Listener();
+        public static GameRoom room = new GameRoom();
+
         static void OnAcceptHandler(Socket clientSocket)
         {
             try
@@ -29,7 +31,6 @@ namespace Server
         }
         static void Main(string[] args)
         {
-            PacketManager.Instance.Register();
             //DNS setting
             string host = Dns.GetHostName();
             IPHostEntry ipHost = Dns.GetHostEntry(host);
@@ -37,7 +38,7 @@ namespace Server
             IPEndPoint endPoint = new IPEndPoint(ipAddr, 7777);
 
             //Listen Socket
-            _listner.Init(endPoint, () => { return new ClientSession(); });
+            _listner.Init(endPoint, () => { return SessionManager.Instance.Generate(); });
             Console.WriteLine("Listening");
             while (true)
             {

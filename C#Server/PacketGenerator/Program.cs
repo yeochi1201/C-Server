@@ -79,7 +79,7 @@ namespace PacketGenerator
             {
                 clientRegister += string.Format(PacketFormat.managerRegisterFormat, packetName) + Environment.NewLine;
             }
-            if (packetName.StartsWith("C_") || packetName.StartsWith("c_"))
+            else if (packetName.StartsWith("C_") || packetName.StartsWith("c_"))
             {
                 serverRegister += string.Format(PacketFormat.managerRegisterFormat, packetName) + Environment.NewLine;
             }

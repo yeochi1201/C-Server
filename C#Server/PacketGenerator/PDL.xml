@@ -9,4 +9,12 @@
 			<float name="duration"/>
 		</list>
 	</packet>
+	<packet name="S_Chat">
+		<long name="playerId"/>
+		<string name="chat"/>
+	</packet>
+	<packet name="C_Chat">
+		<long name="playerId"/>
+		<string name="chat"/>
+	</packet>
 </PDL>

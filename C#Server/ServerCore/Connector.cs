@@ -8,19 +8,22 @@ namespace ServerCore
     {
         Func<Session> _sessionFactory;
 
-        public void Connect(IPEndPoint endPoint, Func<Session> sessionFactory)
+        public void Connect(IPEndPoint endPoint, Func<Session> sessionFactory, int count = 1)
         {
-            //socket option setting
-            Socket socket = new Socket(endPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-            //session factory create
-            _sessionFactory = sessionFactory;
-            //socket asynchronos event argument setting
-            SocketAsyncEventArgs args = new SocketAsyncEventArgs();
-            args.Completed += OnConnectedComplete;
-            args.RemoteEndPoint = endPoint;
-            args.UserToken = socket;
+            for (int i = 0; i < count; i++) 
+            {
+                //socket option setting
+                Socket socket = new Socket(endPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+                //session factory create
+                _sessionFactory = sessionFactory;
+                //socket asynchronos event argument setting
+                SocketAsyncEventArgs args = new SocketAsyncEventArgs();
+                args.Completed += OnConnectedComplete;
+                args.RemoteEndPoint = endPoint;
+                args.UserToken = socket;
 
-            RegisterConnect(args);
+                RegisterConnect(args);
+            }
         }
 
         void RegisterConnect(SocketAsyncEventArgs args)
