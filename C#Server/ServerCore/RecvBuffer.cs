@@ -16,13 +16,13 @@ namespace ServerCore
             _readPos = 0;
             _writePos = 0;
         }
-
+        //exist data size
         public int DataSize { get { return _writePos - _readPos; } }
-
+        //exist empty size
         public int FreeSize { get { return _buffer.Count - _writePos; } }
-
+        //return data segment
         public ArraySegment<byte> DataSegment { get { return new ArraySegment<byte>(_buffer.Array, _buffer.Offset + _readPos, DataSize); } }
-
+        //return free segment
         public ArraySegment<byte> FreeSegment { get { return new ArraySegment<byte>(_buffer.Array, _buffer.Offset + _writePos, FreeSize); } }
 
         public void Clear()
@@ -40,7 +40,7 @@ namespace ServerCore
                 _writePos = dataSize;
             }
         }
-
+        //change readPos
         public bool OnRead(int numOfBytes)
         {
             if(numOfBytes > DataSize)
@@ -50,7 +50,7 @@ namespace ServerCore
             _readPos += numOfBytes;
             return true;
         }
-
+        //change writePos
         public bool OnWrite(int numOfBytes)
         {
             if(numOfBytes > FreeSize) 

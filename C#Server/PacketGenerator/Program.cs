@@ -9,8 +9,12 @@ namespace PacketGenerator
         static string packetEnums = "";
         static ushort packetId = 0;
 
+        static string clientRegister;
+        static string serverRegister;
+
         static void Main(string[] args)
         {
+            //PDL location
             string pdlPath = "../../PDL.xml";
 
             XmlReaderSettings settings = new XmlReaderSettings()
@@ -30,14 +34,19 @@ namespace PacketGenerator
 
                 while(r.Read())
                 {
+                    //packet parsing
                     if(r.Depth== 1 && r.NodeType == XmlNodeType.Element)
                     {
                         ParsePacket(r);
                     }
                 }
-
+                //create packet file
                 string fileText = string.Format(PacketFormat.fileFormat, packetEnums, genPackets);
                 File.WriteAllText("Packets.cs", fileText);
+                string serverManagerText = string.Format(PacketFormat.managerFormat, serverRegister);
+                File.WriteAllText("ServerPacketManager.cs", serverManagerText);
+                string clientManagerText = string.Format(PacketFormat.managerFormat, clientRegister);
+                File.WriteAllText("ClientPacketManager.cs", clientManagerText);
             }
         }
 
@@ -59,12 +68,28 @@ namespace PacketGenerator
                 Console.WriteLine("Packet Without Name");
                 return;
             }
-
+            //packet class attribute parsing
             Tuple<string, string, string> t = ParseMembers(r);
+            //packet header format
             genPackets += string.Format(PacketFormat.packetFormat, packetName,t.Item1,t.Item2,t.Item3);
-            packetEnums += string.Format(PacketFormat.packetEnumFormat, packetName, ++packetId)+ Environment.NewLine+ "\t";
+            //packetId enum format
+            packetEnums += string.Format(PacketFormat.packetEnumFormat, packetName, ++packetId)+ "\t";
+            //packet manager register format
+            if(packetName.StartsWith("S_") || packetName.StartsWith("s_"))
+            {
+                clientRegister += string.Format(PacketFormat.managerRegisterFormat, packetName) + Environment.NewLine;
+            }
+            if (packetName.StartsWith("C_") || packetName.StartsWith("c_"))
+            {
+                serverRegister += string.Format(PacketFormat.managerRegisterFormat, packetName) + Environment.NewLine;
+            }
+            else
+            {
+                clientRegister += string.Format(PacketFormat.managerRegisterFormat, packetName) + Environment.NewLine;
+                serverRegister += string.Format(PacketFormat.managerRegisterFormat, packetName) + Environment.NewLine;
+            }
         }
-
+        //general type attribute parsing
         public static Tuple<string, string, string> ParseMembers(XmlReader r)
         {
             string pakcetName = r["name"];
@@ -140,7 +165,7 @@ namespace PacketGenerator
             writeCode = writeCode.Replace("\n", "\n\t\t");
             return new Tuple<string, string, string>(memberCode,readCode,writeCode);
         }
-
+        //attribute list parsing
         public static Tuple<string, string, string> ParseList(XmlReader r)
         {
             string listName = r["name"];
@@ -157,7 +182,7 @@ namespace PacketGenerator
 
             return new Tuple<string, string, string>(memberCode,readCode ,writeCode);
         }
-
+        //ToMemberType function parsing
         public static string ToMemberType(string memberType)
         {
             switch (memberType)

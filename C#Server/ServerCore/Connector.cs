@@ -10,8 +10,11 @@ namespace ServerCore
 
         public void Connect(IPEndPoint endPoint, Func<Session> sessionFactory)
         {
+            //socket option setting
             Socket socket = new Socket(endPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+            //session factory create
             _sessionFactory = sessionFactory;
+            //socket asynchronos event argument setting
             SocketAsyncEventArgs args = new SocketAsyncEventArgs();
             args.Completed += OnConnectedComplete;
             args.RemoteEndPoint = endPoint;
@@ -27,9 +30,11 @@ namespace ServerCore
             {
                 return;
             }
+            //connecting request true => continue pending / false => success
             bool pending = socket.ConnectAsync(args);
             if(pending == false)
             {
+                //connect success
                 OnConnectedComplete(null, args);
             }
         }
@@ -38,8 +43,11 @@ namespace ServerCore
         {
             if(args.SocketError == SocketError.Success)
             {
+                //session create
                 Session session = _sessionFactory.Invoke();
+                //session start
                 session.Start(args.ConnectSocket);
+                //session connect event
                 session.OnConnected(args.RemoteEndPoint);
             }
             else

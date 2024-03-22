@@ -9,15 +9,20 @@ namespace ServerCore
     {
         Socket _listenSocket;
         Func<Session> _sessionFactory;
+        int maxClient = 10;
+
 
         public void Init(IPEndPoint endPoint, Func<Session> sessionFactory)
         {
             _sessionFactory = sessionFactory;
+            //socket option setting
             _listenSocket = new Socket(endPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
             _listenSocket.Bind(endPoint);
 
-            _listenSocket.Listen(10);
+            //socket waiting (max client)
+            _listenSocket.Listen(maxClient);
 
+            //socket asynchronous event setting
             SocketAsyncEventArgs args = new SocketAsyncEventArgs();
             args.Completed += new EventHandler<SocketAsyncEventArgs>(OnAcceptCompleted);
             RegisterAccept(args);
@@ -26,9 +31,11 @@ namespace ServerCore
         {
             args.AcceptSocket = null;
 
+            //socket accepting true => continue accepting / false => success
             bool pending = _listenSocket.AcceptAsync(args);
             if (pending == false) 
             {
+                //accepting complete event start
                 OnAcceptCompleted(null, args);
             }
         }
@@ -37,8 +44,11 @@ namespace ServerCore
         {
             if(args.SocketError == SocketError.Success)
             {
+                //session create
                 Session session = _sessionFactory.Invoke();
+                //session start
                 session.Start(args.AcceptSocket);
+                //session connect event
                 session.OnConnected(args.AcceptSocket.RemoteEndPoint);
             }
             else

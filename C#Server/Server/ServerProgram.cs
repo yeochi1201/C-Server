@@ -8,11 +8,13 @@ namespace Server
 {
     class ServerProgram
     {
+        //server socket create
         static Listener _listner = new Listener();
         static void OnAcceptHandler(Socket clientSocket)
         {
             try
             {
+                //session create for client
                 ClientSession session = new ClientSession();
                 session.Start(clientSocket);
 
@@ -27,7 +29,8 @@ namespace Server
         }
         static void Main(string[] args)
         {
-            //DNS
+            PacketManager.Instance.Register();
+            //DNS setting
             string host = Dns.GetHostName();
             IPHostEntry ipHost = Dns.GetHostEntry(host);
             IPAddress ipAddr = ipHost.AddressList[0];

@@ -10,13 +10,14 @@ namespace DummyClient
     {
         static void Main(string[] args)
         {
-            //DNS
+            //DNS setting
             string host = Dns.GetHostName();
             IPHostEntry ipHost = Dns.GetHostEntry(host);
             IPAddress ipAddr = ipHost.AddressList[0];
             IPEndPoint endPoint = new IPEndPoint(ipAddr, 7777);
-
+            //client socket create
             Connector connector = new Connector();
+            //session create
             connector.Connect(endPoint, () => { return new ServerSession(); });
 
             while (true)

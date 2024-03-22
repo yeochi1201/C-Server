@@ -4,16 +4,22 @@ using System;
 using System.Net;
 using System.Text;
 
+public interface IPacket
+    {
+        ushort Protocol { get; }
+        void Read(ArraySegment<byte> segment);
+        ArraySegment<byte> Write();
+    }
+
 public enum PacketID
 {
     
     PlayerInfoReq = 1,
-
 	
 }
 
 
-public class PlayerInfoReq
+public class PlayerInfoReq : IPacket
 {
     public long playerId;
 	public string playerName;
@@ -59,7 +65,7 @@ public class PlayerInfoReq
 	}
 	public List<Skill> skills = new List<Skill>();
 	
-    
+    public ushort Protocol { get { return (ushort)PacketID.PlayerInfoReq; } }
     public void Read(ArraySegment<byte> segment)
     {
         ushort count = 0;

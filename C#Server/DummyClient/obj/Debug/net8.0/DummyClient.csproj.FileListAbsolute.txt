@@ -21,9 +21,7 @@ D:\GitHub\C-Server\C#Server\DummyClient\bin\Debug\net8.0\DummyClient.deps.json
 D:\GitHub\C-Server\C#Server\DummyClient\bin\Debug\net8.0\DummyClient.runtimeconfig.json
 D:\GitHub\C-Server\C#Server\DummyClient\bin\Debug\net8.0\DummyClient.dll
 D:\GitHub\C-Server\C#Server\DummyClient\bin\Debug\net8.0\DummyClient.pdb
-D:\GitHub\C-Server\C#Server\DummyClient\bin\Debug\net8.0\Packet.dll
 D:\GitHub\C-Server\C#Server\DummyClient\bin\Debug\net8.0\ServerCore.dll
-D:\GitHub\C-Server\C#Server\DummyClient\bin\Debug\net8.0\Packet.pdb
 D:\GitHub\C-Server\C#Server\DummyClient\bin\Debug\net8.0\ServerCore.pdb
 D:\GitHub\C-Server\C#Server\DummyClient\obj\Debug\net8.0\DummyClient.csproj.AssemblyReference.cache
 D:\GitHub\C-Server\C#Server\DummyClient\obj\Debug\net8.0\DummyClient.GeneratedMSBuildEditorConfig.editorconfig
