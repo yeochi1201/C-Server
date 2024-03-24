@@ -9,10 +9,9 @@ namespace ServerCore
     {
         Socket _listenSocket;
         Func<Session> _sessionFactory;
-        int maxClient = 10;
 
 
-        public void Init(IPEndPoint endPoint, Func<Session> sessionFactory)
+        public void Init(IPEndPoint endPoint, Func<Session> sessionFactory, int register = 10, int backlog = 100)
         {
             _sessionFactory = sessionFactory;
             //socket option setting
@@ -20,12 +19,15 @@ namespace ServerCore
             _listenSocket.Bind(endPoint);
 
             //socket waiting (max client)
-            _listenSocket.Listen(maxClient);
+            _listenSocket.Listen(backlog);
 
             //socket asynchronous event setting
-            SocketAsyncEventArgs args = new SocketAsyncEventArgs();
-            args.Completed += new EventHandler<SocketAsyncEventArgs>(OnAcceptCompleted);
-            RegisterAccept(args);
+            for(int i  = 0; i < register; i++)
+            {
+                SocketAsyncEventArgs args = new SocketAsyncEventArgs();
+                args.Completed += new EventHandler<SocketAsyncEventArgs>(OnAcceptCompleted);
+                RegisterAccept(args);
+            }
         }
         void RegisterAccept(SocketAsyncEventArgs args)
         {

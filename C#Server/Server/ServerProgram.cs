@@ -1,7 +1,4 @@
-﻿using System;
-using System.Net.Sockets;
-using System.Net;
-using System.Threading;
+﻿using System.Net;
 using ServerCore;
 
 namespace Server
@@ -12,23 +9,12 @@ namespace Server
         static Listener _listner = new Listener();
         public static GameRoom room = new GameRoom();
 
-        static void OnAcceptHandler(Socket clientSocket)
+        static void FlushRoom()
         {
-            try
-            {
-                //session create for client
-                ClientSession session = new ClientSession();
-                session.Start(clientSocket);
-
-                Thread.Sleep(1000);
-
-                session.Disconnect();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.ToString());
-            }
+            room.Push(() => room.Flush());
+            JobTimer.Instance.Push(FlushRoom, 250);
         }
+
         static void Main(string[] args)
         {
             //DNS setting
@@ -40,9 +26,12 @@ namespace Server
             //Listen Socket
             _listner.Init(endPoint, () => { return SessionManager.Instance.Generate(); });
             Console.WriteLine("Listening");
+
+            FlushRoom();
+
             while (true)
             {
-                ;
+                JobTimer.Instance.Flush();
             }
         }
     }

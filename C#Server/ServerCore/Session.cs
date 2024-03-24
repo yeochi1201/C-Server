@@ -11,7 +11,7 @@ namespace ServerCore
         public sealed override int OnReceive(ArraySegment<byte> buffer)
         {
             int processLen = 0;
-
+            int packetCount = 0;
             while (true)
             {
                 if (buffer.Count < HeaderSize)
@@ -22,9 +22,14 @@ namespace ServerCore
                     break;
 
                 OnReceivePacket(new ArraySegment<byte>(buffer.Array, buffer.Offset, dataSize));
+                packetCount++;
 
                 processLen += dataSize;
                 buffer = new ArraySegment<byte>(buffer.Array, buffer.Offset + dataSize, buffer.Count - dataSize);
+            }
+            if(packetCount > 1)
+            {
+                Console.WriteLine($"Flushed : {packetCount}");
             }
             return processLen;
         }
@@ -38,7 +43,7 @@ namespace ServerCore
         //connecting state 0 => connect / 1 => disconnect
         int _disconnected = 0;
 
-        RecvBuffer _recvBuffer = new RecvBuffer(1024);
+        RecvBuffer _recvBuffer = new RecvBuffer(65535);
 
         object _lock = new object();
         Queue<ArraySegment<byte>> _sendQueue = new Queue<ArraySegment<byte>>();
@@ -83,6 +88,28 @@ namespace ServerCore
                 }
             }
         }
+
+        public void Send(List<ArraySegment<byte>> sendBuffList)
+        {
+            lock (_lock)
+            {
+                if(sendBuffList.Count == 0)
+                {
+                    return;
+                }
+                foreach(ArraySegment<byte> sendBuff in sendBuffList)
+                {
+                    //sendBuff -> sendQueue
+                    _sendQueue.Enqueue(sendBuff);
+                }
+                //pendingList empty (anything pending)
+                if (_pendingList.Count == 0)
+                {
+                    RegisterSend();
+                }
+            }
+        }
+
         public void Disconnect()
         {
             //connecting state confirm
