@@ -27,7 +27,7 @@ namespace ServerCore
                 processLen += dataSize;
                 buffer = new ArraySegment<byte>(buffer.Array, buffer.Offset + dataSize, buffer.Count - dataSize);
             }
-            if(packetCount > 1)
+            if (packetCount > 1)
             {
                 Console.WriteLine($"Flushed : {packetCount}");
             }
@@ -53,7 +53,7 @@ namespace ServerCore
 
         void Clear()
         {
-            lock(_lock)
+            lock (_lock)
             {
                 _sendQueue.Clear();
                 _pendingList.Clear();
@@ -93,11 +93,11 @@ namespace ServerCore
         {
             lock (_lock)
             {
-                if(sendBuffList.Count == 0)
+                if (sendBuffList.Count == 0)
                 {
                     return;
                 }
-                foreach(ArraySegment<byte> sendBuff in sendBuffList)
+                foreach (ArraySegment<byte> sendBuff in sendBuffList)
                 {
                     //sendBuff -> sendQueue
                     _sendQueue.Enqueue(sendBuff);
@@ -132,8 +132,8 @@ namespace ServerCore
                 return;
             }
 
-                //exist waiting send
-                while (_sendQueue.Count > 0)
+            //exist waiting send
+            while (_sendQueue.Count > 0)
             {
                 //sendQueue -> pendingList
                 ArraySegment<byte> buff = _sendQueue.Dequeue();
@@ -217,7 +217,7 @@ namespace ServerCore
                 Console.WriteLine($"Register Recv Failed : {ex}");
             }
             //receive asynchronous  true => pending / false => success
-            
+
         }
         void OnRecvCompleted(object sender, SocketAsyncEventArgs args)
         {
@@ -226,20 +226,20 @@ namespace ServerCore
                 //TODO
                 try
                 {
-                    if(_recvBuffer.OnWrite(args.BytesTransferred) == false)
+                    if (_recvBuffer.OnWrite(args.BytesTransferred) == false)
                     {
                         Disconnect();
                         return;
                     }
                     //receive process length
                     int processLen = OnReceive(_recvBuffer.DataSegment);
-                    if (processLen < 0 || processLen > _recvBuffer.DataSize) 
+                    if (processLen < 0 || processLen > _recvBuffer.DataSize)
                     {
                         Disconnect();
                         return;
                     }
 
-                    if(_recvBuffer.OnRead(processLen) == false)
+                    if (_recvBuffer.OnRead(processLen) == false)
                     {
                         Disconnect();
                         return;

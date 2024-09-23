@@ -1,12 +1,103 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\GitHub\\C-Server\\C#Server\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8720D6FC-B119-4BDB-9C6B-ED9C38FE9FD1}|Server\\Server.csproj|d:\\github\\c-server\\c#server\\server\\serverprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8720D6FC-B119-4BDB-9C6B-ED9C38FE9FD1}|Server\\Server.csproj|solutionrelative:server\\serverprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D377A66E-F1F7-42BC-A58F-747BDB5C0074}|ServerCore\\ServerCore.csproj|d:\\github\\c-server\\c#server\\servercore\\connector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D377A66E-F1F7-42BC-A58F-747BDB5C0074}|ServerCore\\ServerCore.csproj|solutionrelative:servercore\\connector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D377A66E-F1F7-42BC-A58F-747BDB5C0074}|ServerCore\\ServerCore.csproj|d:\\github\\c-server\\c#server\\servercore\\listener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D377A66E-F1F7-42BC-A58F-747BDB5C0074}|ServerCore\\ServerCore.csproj|solutionrelative:servercore\\listener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1A36DC9-6328-483C-94FE-524C1A874BF3}|DummyClient\\DummyClient.csproj|d:\\github\\c-server\\c#server\\dummyclient\\session\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1A36DC9-6328-483C-94FE-524C1A874BF3}|DummyClient\\DummyClient.csproj|solutionrelative:dummyclient\\session\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8720D6FC-B119-4BDB-9C6B-ED9C38FE9FD1}|Server\\Server.csproj|d:\\github\\c-server\\c#server\\server\\session\\clientsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8720D6FC-B119-4BDB-9C6B-ED9C38FE9FD1}|Server\\Server.csproj|solutionrelative:server\\session\\clientsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServerProgram.cs",
+              "DocumentMoniker": "D:\\GitHub\\C-Server\\C#Server\\Server\\ServerProgram.cs",
+              "RelativeDocumentMoniker": "Server\\ServerProgram.cs",
+              "ToolTip": "D:\\GitHub\\C-Server\\C#Server\\Server\\ServerProgram.cs",
+              "RelativeToolTip": "Server\\ServerProgram.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T16:52:56.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Listener.cs",
+              "DocumentMoniker": "D:\\GitHub\\C-Server\\C#Server\\ServerCore\\Listener.cs",
+              "RelativeDocumentMoniker": "ServerCore\\Listener.cs",
+              "ToolTip": "D:\\GitHub\\C-Server\\C#Server\\ServerCore\\Listener.cs",
+              "RelativeToolTip": "ServerCore\\Listener.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAADwvz4AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T15:45:02.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Connector.cs",
+              "DocumentMoniker": "D:\\GitHub\\C-Server\\C#Server\\ServerCore\\Connector.cs",
+              "RelativeDocumentMoniker": "ServerCore\\Connector.cs",
+              "ToolTip": "D:\\GitHub\\C-Server\\C#Server\\ServerCore\\Connector.cs",
+              "RelativeToolTip": "ServerCore\\Connector.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAADwvwoAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T15:44:56.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SessionManager.cs",
+              "DocumentMoniker": "D:\\GitHub\\C-Server\\C#Server\\DummyClient\\Session\\SessionManager.cs",
+              "RelativeDocumentMoniker": "DummyClient\\Session\\SessionManager.cs",
+              "ToolTip": "D:\\GitHub\\C-Server\\C#Server\\DummyClient\\Session\\SessionManager.cs",
+              "RelativeToolTip": "DummyClient\\Session\\SessionManager.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T15:44:50.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClientSession.cs",
+              "DocumentMoniker": "D:\\GitHub\\C-Server\\C#Server\\Server\\Session\\ClientSession.cs",
+              "RelativeDocumentMoniker": "Server\\Session\\ClientSession.cs",
+              "ToolTip": "D:\\GitHub\\C-Server\\C#Server\\Server\\Session\\ClientSession.cs",
+              "RelativeToolTip": "Server\\Session\\ClientSession.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAADwvyAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T15:43:52.184Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
